@@ -1,4 +1,5 @@
 FROM centos:latest
 RUN mkdir /home/mydownload
 RUN cd /home/mydownload
-RUN curl -O -L https://downloads.raspberrypi.org/NOOBS_latest
+RUN yum install -y wget
+RUN wget https://downloads.raspberrypi.org/NOOBS_latest
